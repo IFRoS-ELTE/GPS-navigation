@@ -1,6 +1,8 @@
 # GPS-navigation
 GPS waypoint navigation, using LIDAR object avoidance
 
+To run the code, place the two python scripts into catkin_ws/src/Obstacle-Navigation-ROS/mysimplenav/Scripts and enable execution on them, then use 'rosrun Obstacle-Navigation-ROS avoid.py'
+
 Obstacles are detected by the LIDAR in a point cloud, these are defined with an angle and distance
 The angle starts and ends behind the robot, at -pi and pi, and each point is a constant increment further than the last
 This way, we can iterate through them, and know in which quadrant it falls (a picture is included among the files)
