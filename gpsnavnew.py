@@ -185,6 +185,8 @@ def listener():
             #avoid obstacle while moving
             if(not cangoforwardfar and avoiddir == 0):
                 avoiddir = turn
+	    if(not cangoforwardfar and avoiddir != 0):
+                turn = avoiddir
                 
             #check to see if past obstacle
             if(cangoforwardfar):
